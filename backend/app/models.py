@@ -43,4 +43,4 @@ class ActivityLog(Base):
     event_detail = Column(Text)
     ip_address = Column(String(50))
     device = Column(String(100))
-    timestamp = Column(DateTime(timezone=True), server_default=func.now(), index=True)
+    timestamp = Column(DateTime(timezone=True), server_default=func.now(), index=True)  
